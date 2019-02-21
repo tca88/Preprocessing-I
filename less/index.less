@@ -55,7 +55,7 @@ table {
 @font-stack: 'Roboto', sans-serif;
 @base-font-size: 62.5%;
 @font-color: black;
-@mobile: ( max-width: 515px );
+@mobile: (max-width: 515px);
 
 // mixins
 
@@ -152,10 +152,6 @@ header.main-header {
 		justify-content: space-evenly;
 		display: flex;
 		flex-wrap: wrap;
-
-		:hover {
-			color: #4169E1;
-			}
 		
 		a {
 			text-decoration: none;
@@ -170,6 +166,10 @@ header.main-header {
 				border-bottom: 1px solid gray;
 				.custom-font-style(2rem, 300);
 			}
+
+			&:hover {
+				color: #4169E1;
+				}
 
 			  } // a tag in nav
 			  @media @mobile {
