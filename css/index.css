@@ -1,1 +1,391 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: initial;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: black;
+  border-bottom: 1px dotted black;
+  padding: 8px 0;
+  margin: 20px auto;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  padding: 5px 0;
+  margin: 10px auto;
+}
+h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: black;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+p {
+  line-height: 1.25;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: black;
+}
+ul li {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: black;
+  line-height: 1.25;
+  margin: 5px 20px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header.main-header {
+  width: 100%;
+  padding: 20px 30px 20px 20px;
+  background: #f4f4f4;
+}
+header.main-header nav {
+  margin: 15px 0;
+  padding: 10px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+header.main-header nav a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+@media (max-width: 515px) {
+  header.main-header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+  }
+}
+header.main-header nav a:hover {
+  color: #4169E1;
+}
+@media (max-width: 515px) {
+  header.main-header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+header.main-header section.heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+header.main-header section.heading .box {
+  text-align: center;
+  border: 2px solid black;
+  padding: 30px 100px;
+  background: #F1F6FE;
+}
+header.main-header section.heading h2 {
+  margin: 0;
+  border: none;
+}
+.all-content-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  width: 100%;
+  border-top: 1px solid black;
+  height: 1600px;
+}
+.all-content-container .professional-content {
+  margin-left: 5%;
+}
+@media (max-width: 515px) {
+  .all-content-container .professional-content {
+    padding-right: 20px;
+  }
+}
+.all-content-container .additional-info-content {
+  background: #f4f4f4;
+  padding: 0 20px;
+  height: 100%;
+}
+@media (max-width: 515px) {
+  .all-content-container .additional-info-content {
+    background: white;
+  }
+}
+.all-content-container .additional-info-content .progress-bar1 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar1 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+.all-content-container .additional-info-content .progress-bar2 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar2 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 20%;
+}
+.all-content-container .additional-info-content .progress-bar3 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar3 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 60%;
+}
+.all-content-container .additional-info-content .progress-bar4 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar4 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 65%;
+}
+.all-content-container .additional-info-content .progress-bar5 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar5 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 90%;
+}
+.all-content-container .additional-info-content .progress-bar6 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar6 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+.all-content-container .additional-info-content .progress-bar7 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar7 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.all-content-container .additional-info-content .progress-bar8 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar8 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+@media (max-width: 515px) {
+  .all-content-container {
+    flex-direction: column;
+  }
+}
