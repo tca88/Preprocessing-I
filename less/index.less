@@ -193,12 +193,20 @@ header.main-header {
 
 	.professional-content {
 		margin-left: 5%;
+
+		@media @mobile {
+			padding-right: 20px;
+		}
 	} // work experience and education content container
 
 	.additional-info-content {
 		background: #f4f4f4;
 		padding: 0 20px;
 		height: inherit;
+
+		@media @mobile {
+			background: white;
+		}
 	} // contact info & skills content container
 
 	@media @mobile {
