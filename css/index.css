@@ -265,12 +265,124 @@ header.main-header section.heading h2 {
 .all-content-container .additional-info-content {
   background: #f4f4f4;
   padding: 0 20px;
-  height: inherit;
+  height: 100%;
 }
 @media ( max-width: 515px ) {
   .all-content-container .additional-info-content {
     background: white;
   }
+}
+.all-content-container .additional-info-content .progress-bar1 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar1 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+.all-content-container .additional-info-content .progress-bar2 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar2 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 20%;
+}
+.all-content-container .additional-info-content .progress-bar3 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar3 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 60%;
+}
+.all-content-container .additional-info-content .progress-bar4 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar4 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 65%;
+}
+.all-content-container .additional-info-content .progress-bar5 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar5 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 90%;
+}
+.all-content-container .additional-info-content .progress-bar6 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar6 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+.all-content-container .additional-info-content .progress-bar7 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar7 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.all-content-container .additional-info-content .progress-bar8 {
+  background-color: white;
+  border-radius: 13px;
+  border: 0.45px #686767 solid;
+  padding: 2px;
+  width: 60%;
+  margin: 0 0 0 20px;
+}
+.all-content-container .additional-info-content .progress-bar8 > div {
+  background-color: #1756bb;
+  height: 10px;
+  border-radius: 10px;
+  width: 50%;
 }
 @media ( max-width: 515px ) {
   .all-content-container {

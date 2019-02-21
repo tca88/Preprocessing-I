@@ -71,6 +71,21 @@ table {
 	flex-direction: column;
 	align-items: center;
 }
+
+.progress-bar-layout(@pbw) {
+	background-color: white;
+		  border-radius: 13px;
+		  border: .45px #686767 solid;
+		  padding: 2px;
+		  width: 60%;
+		  margin: 0 0 0 20px;
+	&>div {
+		background-color: rgb(23, 86, 187);
+		height: 10px;
+		border-radius: 10px;
+		width: @pbw;
+	}
+}
 // -------------
 html {
 	box-sizing: border-box;
@@ -202,10 +217,42 @@ header.main-header {
 	.additional-info-content {
 		background: #f4f4f4;
 		padding: 0 20px;
-		height: inherit;
+		height: 100%;
 
 		@media @mobile {
 			background: white;
+		}
+		
+		.progress-bar1 {
+			.progress-bar-layout(80%);
+		}
+
+		.progress-bar2 {
+			.progress-bar-layout(20%);
+		}
+
+		.progress-bar3 {
+			.progress-bar-layout(60%);
+		}
+
+		.progress-bar4 {
+			.progress-bar-layout(65%);
+		}
+
+		.progress-bar5 {
+			.progress-bar-layout(90%);
+		}
+
+		.progress-bar6 {
+			.progress-bar-layout(50%);
+		}
+
+		.progress-bar7 {
+			.progress-bar-layout(100%);
+		}
+
+		.progress-bar8 {
+			.progress-bar-layout(50%);
 		}
 	} // contact info & skills content container
 
